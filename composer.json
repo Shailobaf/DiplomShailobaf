@@ -1,0 +1,15 @@
+{
+    "name": "shailobaf/vrcenter",
+    "autoload": {
+        "psr-4": {
+            "Shailobaf\\Vrcenter\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Shailobaf",
+            "email": "isama001@bk.ru"
+        }
+    ],
+    "require": {"phpmailer/phpmailer": "^6.8.0"}
+}

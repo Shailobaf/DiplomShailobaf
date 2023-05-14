@@ -8,6 +8,11 @@ header {
   z-index: 100;
   color: rgb(15, 23, 42);
 }
+@media (max-width: 1000) {
+  #brg {
+    display: none;
+  }
+}
 
 .faq ul {
   opacity: 0;

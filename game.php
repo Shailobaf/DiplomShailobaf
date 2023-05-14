@@ -37,8 +37,8 @@ if ($result->num_rows > 0) {
     while($row = $result->fetch_assoc()) {
         echo 
             '<div class="flex flex-col lg:flex-row w-full gap-12 mt-4 mb-12">
-              <div class="flex w-full">
-                <img src="./img/games/',$row["image"], '" alt="" class="object-fit" />
+              <div class="flex justify-center w-full">
+                <img src="./img/games/',$row["image"], '" alt="" class="h-[400px] w-[400px] object-cover" />
               </div>
               <div class="flex w-full flex-col px-6">
                 <div class="text-2xl text-gray-300 font-bold mb-6">',$row["name"] ,'</div>

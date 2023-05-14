@@ -11,8 +11,9 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <title>VR center</title>
 </head>
+
 <body class="bg-slate-900">
-<?php include 'partials/header.php';?>
+  <?php include 'partials/header.php'; ?>
   <section class="bg-gradient-to-r from-pink-900 to-blue-900">
     <div class="pt-24">
       <div class="container px-3 mx-auto flex flex-wrap flex-col md:flex-row items-center text-white">
@@ -84,11 +85,11 @@
     </div>
   </section>
   <section class="bg-slate-900">
-    <h4
-      class="text-4xl mb-2 font-bold uppercase text-center text-transparent  bg-clip-text bg-gradient-to-r from-pink-700 to-blue-600">
-      Игры</h4>
     <div class="bg-fixed w-full lg:h-[230px] pb-[20px] h-[200px] bg-center bg-cover" style="
       background-image: url('./img/james-yarema-E-CdfbrnnFs-unsplash.jpg');"></div>
+      <h4
+      class="text-4xl pt-4 font-bold uppercase text-center text-transparent  bg-clip-text bg-gradient-to-r from-pink-700 to-blue-600">
+      Игры</h4>
     <div class="flex items-center justify-center w-full h-full py-24 sm:py-8 px-4">
       <div class="w-full relative flex items-center justify-center">
         <button aria-label="slide backward"
@@ -100,14 +101,14 @@
           <div id="slider"
             class="h-full flex lg:gap-10 md:gap-6 gap-16 items-center justify-start transition ease-out duration-700">
 
-            <?php include 'slider.php';?>
+            <?php include 'slider.php'; ?>
 
           </div>
         </div>
         <button aria-label="slide forward"
           class="absolute z-30 right-0 mr-10 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-200 opacity-50"
           id="next">
-         <img class="w-8 h-8 -rotate-90" src="./icons/chevron-down-svgrepo-com.png">
+          <img class="w-8 h-8 -rotate-90" src="./icons/chevron-down-svgrepo-com.png">
         </button>
       </div>
     </div>
@@ -153,8 +154,8 @@
                   500₽<span class="text-base text-body-color font-medium">/ 30 мин</span></h2>
               </li>
             </ul>
-            <button class="mt-10 w-full transform rounded-md bg-blue-600 px-4 py-2 text-white hover:bg-blue-500">
-              Арендовать</button>
+            <a href="https://vk.com/im?media=&sel=-168104593" class="mt-10 w-full transform rounded-md bg-blue-600 px-4 py-2 text-white hover:bg-blue-500">
+              Арендовать</a>
           </div>
           <div
             class="card-item flex flex-col items-center w-full bg-slate-800 text-white space-y-8 rounded-lg p-8 text-center">
@@ -181,8 +182,8 @@
                     class="text-base text-body-color font-medium">/ 30 мин</span></h2>
               </li>
             </ul>
-            <button class="mt-10 w-full transform rounded-md bg-blue-600 px-4 py-2 text-white hover:bg-blue-500">
-              Арендовать</button>
+            <a href="https://vk.com/im?media=&sel=-168104593" class="mt-10 w-full transform rounded-md bg-blue-600 px-4 py-2 text-white hover:bg-blue-500">
+              Арендовать</a>
           </div>
           <div
             class="card-item flex flex-col items-center bg-slate-800 text-white space-y-8 rounded-lg p-8 text-center">
@@ -209,14 +210,13 @@
                   600₽<span class="text-base text-body-color font-medium">/ 30 мин</span></h2>
               </li>
             </ul>
-            <button class="mt-10 w-full transform rounded-md bg-blue-600 px-4 py-2 text-white hover:bg-blue-500">
-              Арендовать</button>
+            <a href="https://vk.com/im?media=&sel=-168104593" class="mt-10 w-full transform rounded-md bg-blue-600 px-4 py-2 text-white hover:bg-blue-500">
+              Арендовать</a>
           </div>
         </div>
       </div>
     </div>
   </section>
-
   <section class="mt-32">
     <div class="bg-fixed w-full lg:h-[230px] h-[200px] mb-[60px] bg-center bg-cover" style="
     background-image: url('./img/home-bg-01.jpg');"></div>
@@ -229,18 +229,92 @@
           на часто задаваемые вопросы
         </p>
       </div>
-      <div class="faq transition-[1s]  gap-8 grid max-w-xl mx-auto mt-8">
+      <div class="flex flex-col w-full mt-6 px-4 md:px-48 mb-6">
+        <div class="flex flex-row justify-left relative mb-4">
+          <div class="text-xl">Что вы представляете?</div>
+          <button id="question1" class="absolute top-0 right-0 w-8 h-8 duration-300" onclick="openAnswer(1)">
+            <img class="w-full h-full" src="./icons/chevron-down-svgrepo-com.png" alt="">
+          </button>
+        </div>
+        <div id="answer1" class="text-base hidden">VR центр представляет собой современное мультимедийное помещение,где
+          посетители могут испытать на себе уникальные впечатления, используя виртуальную реальность. Целью проекта
+          является создание инновационного развлекательного комплекса, который предложит посетителям отличную
+          возможность погрузиться в мир виртуальной реальности и испытать настоящие эмоции.</div>
+      </div>
+      <div class="flex flex-col w-full mt-6 px-4 md:px-48 mb-6">
+        <div class="flex flex-row justify-left relative mb-4">
+          <div class="text-xl">Какие условия работы?</div>
+          <button id="question2" class="absolute top-0 right-0 w-8 h-8 duration-300" onclick="openAnswer(2)">
+            <img class="w-full h-full" src="./icons/chevron-down-svgrepo-com.png" alt="">
+          </button>
+        </div>
+        <div id="answer2" class="text-base hidden">Организация должна осуществлять работу в удобное для клиентов время.
+          Режим работы VR центра должен быть следующим: - Рабочие часы с 10:00 до 22:00 с понедельника по воскресенье
+          без перерывов и выходных дней.</div>
+      </div>
+      <div class="flex flex-col w-full mt-6 px-4 md:px-48 mb-6">
+        <div class="flex flex-row justify-left relative mb-4">
+          <div class="text-xl">Какое должно быть помещения?</div>
+          <button id="question3" class="absolute top-0 right-0 w-8 h-8 duration-300" onclick="openAnswer(3)">
+            <img class="w-full h-full" src="./icons/chevron-down-svgrepo-com.png" alt="">
+          </button>
+        </div>
+        <div id="answer3" class="text-base hidden">VR центр должен иметь следующие особенности: - Площадь помещения
+          должна быть не менее 80-100 квадратных метров.Наличие удобных и просторных зон отдыха для посетителей,
+          Наличие специальных зон регистрации, кассы и гардеробной,
+          Наличие выделенной зоны для игроков, оснащенной подходящим оборудованием,
+          Доступ к Wi-Fi и высокоскоростному мобильному интернету.</div>
+      </div>
+      <div class="flex flex-col w-full mt-6 px-4 md:px-48 mb-6">
+        <div class="flex flex-row justify-left relative mb-4">
+          <div class="text-xl">Какое должно быть необходимое оборудование?</div>
+          <button id="question4" class="absolute top-0 right-0 w-8 h-8 duration-300" onclick="openAnswer(4)">
+            <img class="w-full h-full" src="./icons/chevron-down-svgrepo-com.png" alt="">
+          </button>
+        </div>
+        <div id="answer4" class="text-base hidden">Для проведения проекта необходим следующий список оборудования,
+          Компьютеры высокой производительности для работы виртуальной реальности,
+          VR-шлемы (HTC Vive, Oculus Rift, Samsung Gear, PlayStation VR и др),
+          Руль, педали и геймпады для симуляторов вождения,
+          Контроллеры движений для игр.</div>
+      </div>
+      <div class="flex flex-col w-full mt-6 px-4 md:px-48 mb-6">
+        <div class="flex flex-row justify-left relative mb-4">
+          <div class="text-xl">Вредны ли очки виртуальной реальности для здоровья?</div>
+          <button id="question5" class="absolute top-0 right-0 w-8 h-8 duration-300" onclick="openAnswer(5)">
+            <img class="w-full h-full" src="./icons/chevron-down-svgrepo-com.png" alt="">
+          </button>
+        </div>
+        <div id="answer5" class="text-base hidden"> Достоверных исследований, подтверждающих либо опровергающих
+          причинение VR-устройствами вреда здоровью, нет. Ученые сходятся во мнении, что использование подобных гаджетов
+          вряд ли приведет к значительным негативным последствиям – потенциальный вред сопоставим, например, с обычным
+          телевизором или монитором компьютера.</div>
+      </div>
+      <div class="flex flex-col w-full mt-6 px-4 md:px-48 mb-6">
+        <div class="flex flex-row justify-left relative mb-4">
+          <div class="text-xl"> Как снизить негативное воздействие VR-устройств на здоровье?</div>
+          <button id="question6" class="absolute top-0 right-0 w-8 h-8 duration-300" onclick="openAnswer(6)">
+            <img class="w-full h-full" src="./icons/chevron-down-svgrepo-com.png" alt="">
+          </button>
+        </div>
+        <div id="answer6" class="text-base hidden">Уменьшить вероятность появления побочных эффектов от использования
+          очков виртуальной реальности просто –достаточно соблюдать меры предосторожности, заявленные производителями
+          VR-гаджетов: контролируйте собственные ощущения; начинайте с малого при знакомстве с миром VR (от 30-60
+          мин.);выбирайте жанры фильмов и игр с учетом возрастных ограничений; освободите максимальное количество места
+          вокруг – так точно ничего не сломаете и не причините себе травму;выбирайте качественный контент без распада на
+          пиксели и размыва картинки;настройте гаджет под себя, чтобы он не сильно сдавливал голову и переносицу, а звук
+          был комфортным;детям младше 12 лет лучше пользоваться очками и шлемами в сопровождении родителей.</div>
       </div>
     </div>
   </section>
-  <section id="svez" class="bg-slate-900 ">
 
+  <section id="svez" class="bg-slate-900 ">
     <div class="relative flex items-top justify-center my-16 bg-slate-900 sm:items-center sm:pt-0">
       <div class="max-w-6xl mx-auto sm:px-6 lg:px-8">
 
         <div class="mt-8 overflow-hidden">
           <div class="grid grid-cols-1 md:grid-cols-2">
-            <div class="p-6 bg-gray-800 sm:rounded-lg">
+            <div class="p-6 bg-slate-800 sm:rounded-lg">
               <h1 class="text-4xl sm:text-5xl text-white">
                 Приходите
               </h1>
@@ -249,17 +323,17 @@
               </p>
 
               <div class="flex items-center mt-8 text-gray-400">
-                <img src="./icons/free-icon-placeholder-149226.png" alt="" class="w-8 h-8 text-gray-500">
+                <img src="./icons/map-location-svgrepo-com.svg" alt="" class="w-8 h-8 text-gray-500">
                 <div class="ml-4 text-md font-semibold w-40">
                   Проспект Михаила Нагибина 34
                 </div>
               </div>
               <div class="flex items-center mt-4 text-gray-400">
-                <img src="./icons/free-icon-phones-1182788.png" alt="" class="w-8 h-8 text-gray-500">
+                <img src="./icons/telephone-receiver-svgrepo-com.svg" alt="" class="w-8 h-8 text-gray-500">
                 <div class="ml-4 text-md font-semibold w-40">RU+7(999)695-71-61</div>
               </div>
               <div class="flex items-center mt-2 text-gray-600 dark:text-gray-400">
-                <img src="./icons/free-icon-email-482138.png" alt="" class="w-8 h-8 text-gray-500">
+                <img src="./icons/mail-x-svgrepo-com.svg" alt="" class="w-8 h-8 text-gray-500">
                 <div class="ml-4 text-md font-semibold w-40">
                   info@vr-center.ru
                 </div>
@@ -274,8 +348,7 @@
       </div>
     </div>
   </section>
-  <?php include 'partials/footer.php';?>
+  <?php include 'partials/footer.php'; ?>
   <script src="script.js"></script>
 </body>
-
 </html>
