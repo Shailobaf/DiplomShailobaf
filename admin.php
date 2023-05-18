@@ -21,13 +21,12 @@ if (!isset($_SESSION['admin'])) {
 
 
 <body class="container mx-auto min-h-screen bg-slate-900">
-  <a href="logout.php">Выйти</a>
   <h1 class="w-full text-center text-3xl text-gray-200 font-bolt mt-6">Игры</h1>
- <section class="w-full rounded-lg bg-slate-700 text-white mt-6  text-base grid grid-cols-10">
+ <section class="w-full rounded-lg bg-slate-700 text-white mt-6  text-base grid grid-cols-6 md:grid-cols-10">
   <div class=" py-2 text-center truncate">ID</div>
   <div class=" py-2 text-center truncate">Превью</div>
   <div class=" py-2 col-span-2 text-center truncate">Название</div>
-  <div class=" py-2 col-span-4 truncate">Описание</div>
+  <div class=" py-2  hidden md:block col-span-4 truncate">Описание</div>
   <a href="adminCreate.php" class="py-2 text-green-500 col-span-2 text-right pr-6 truncate">Добавить</a>
 <?php
                     $servername = "localhost";
@@ -48,16 +47,16 @@ if (!isset($_SESSION['admin'])) {
                           <div class=" py-2 text-center truncate">',$row["id"],'</div>
                           <div class=" flex justify-center"><img src="./img/games/', $row["image"], '" alt="" class="h-[50px] w-[50px] object-cover" /></div>
                           <div class=" py-2 col-span-2 text-center truncate">', $row["name"],'</div>
-                          <div class=" py-2 col-span-4 text-center truncate">',$row["desc"],'</div>
-                          <div class=" flex flex-col items-end pr-6 py-2 col-span-2 text-center truncate"><a class="text-blue-500 mb-2" href="#">Редактировать</a><a class="text-red-600" href="#">Удалить</a></div>
+                          <div class=" py-2 col-span-4 hidden md:block text-center truncate">',$row["desc"],'</div>
+                          <div class=" flex flex-col items-end pr-6 py-2 col-span-2 text-center truncate"><a class="text-blue-500 mb-2" href="adminCreate.php?gameId=', $row["id"], '">Изменить</a><a class="text-red-600" href="gamedelete.php?gameId=', $row["id"], '">Удалить</a></div>
                           ';
                       }
                     } else {
                       echo "0 results";
                     }
                     $conn->close();
-?>
-       
+?> 
 </section>
+<a class="flex justify-center my-6 text-white hover:text-red-500 transition-all" href="logout.php">Выйти</a>
 </body>
 </html>

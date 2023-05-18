@@ -58,10 +58,10 @@ function openNav() {
 }
 
 //slider
-let defaultTransform = 380;
+let defaultTransform = 404;
 
 function goNext() {
-  defaultTransform = defaultTransform - 380;
+  defaultTransform = defaultTransform - 404;
   var slider = document.getElementById("slider");
   if (Math.abs(defaultTransform) >= slider.scrollWidth / 1.3)
     defaultTransform = 0;
@@ -71,7 +71,7 @@ function goNext() {
 function goPrev() {
   var slider = document.getElementById("slider");
   if (Math.abs(defaultTransform) === 0) defaultTransform = 0;
-  else defaultTransform = defaultTransform + 380;
+  else defaultTransform = defaultTransform + 404;
   slider.style.transform = "translateX(" + defaultTransform + "px)";
 }
 

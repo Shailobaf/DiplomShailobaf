@@ -24,3 +24,12 @@ header {
   align-items: center;
   justify-content: space-between;
 }
+
+.card-wrapper {
+  padding: 12px;
+}
+.card-wrapper:hover {
+  padding: 0;
+}
+.card-wrapper:hover .card-img {
+padding: 12px;}

@@ -14,7 +14,7 @@
 
 <body class="bg-slate-900">
     <section class="min-h-screen flex justify-center flex-col items-center  text-white">
-        <form class="bg-white my-auto mx-auto border-solid border-2 rounded-xl px-16 py-6" method="post"
+        <form class="bg-white my-auto mx-4 md:mx-auto border-solid border-2 rounded-xl px-16 py-6" method="post"
             action="<?php echo $_SERVER['PHP_SELF']; ?>">
             <img class="mb-4 h-16 w-full" src="./icons/lock-close-cx-round-719-svgrepo-com.svg">
             <h1 class="text-black text-center">Авторизация</h1>

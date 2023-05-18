@@ -16,8 +16,8 @@ $result = $conn->query($sql);
 if ($result->num_rows > 0) {
   while($row = $result->fetch_assoc()) {
     echo 
-    '<div class="flex flex-shrink-0 relative w-full sm:w-auto">
-        <a href="game.php?gameId=', $row["id"], '"><img src="./img/games/' , $row["image"], '" alt="" class="object-fit w-[380px] h-[420px]" /></a>    
+    '<div class="flex flex-shrink-0 relative w-full sm:w-auto card-wrapper">
+        <a href="game.php?gameId=', $row["id"], '"><img src="./img/games/' , $row["image"], '" alt="" class="card-img object-fit w-[380px] h-[420px]" /></a>    
       </div>';
   }
 } else {

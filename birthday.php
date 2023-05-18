@@ -37,9 +37,9 @@
     <div class="p-8 ">
       <div class="text-white p-4 rounded-lg py-4">
         <h4 class="text-4xl tracking-widest text-center">Празднование дня рождения</h4>
-        <p class="text-center text-sm mt-2">в клубе виртуальной реальности «VR Center» — отличный вариант для
+        <p class="text-center lg:px-8 text-xl mt-2">в клубе виртуальной реальности «VR Center» — отличный вариант для
           тех, кто хочет весело и необычно провести время в компании друзей.</p>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 xl:gap-12 px-2 xl:px-12 mt-4">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 xl:gap-12 px-2 xl:px-12">
           <div class="flex space-x-8 mt-8">
           </div>
         </div>
