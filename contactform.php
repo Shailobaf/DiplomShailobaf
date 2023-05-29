@@ -40,7 +40,7 @@
               class="w-full bg-white rounded border border-gray-300 focus:border-indigo-900 focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"></textarea>
           </div>
           <button type="submit"
-            class="text-white bg-blue-900 py-2 px-6 focus:outline-none hover:bg-blue-500 rounded text-lg">Отправить</button>
+            class="text-white bg-purple-800 py-2 px-6 focus:outline-none hover:bg-blue-500 rounded text-lg">Отправить</button>
           <p class="flex justify-center text-xs text-gray-500 mt-3">Техподдержка ответит вам в ближайшее время </p>
           </div>
     </form>

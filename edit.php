@@ -16,20 +16,11 @@ try {
         
         $imageFileType = strtolower(pathinfo($target_file, PATHINFO_EXTENSION));
 
-
-        // Check if file already exists
         if (file_exists($target_file)) {
             echo "Sorry, file already exists.";
             $uploadOk = 0;
         }
 
-        // Check file size
-        // if ($_FILES["image"]["size"] > 500000) {
-        //     echo "Sorry, your file is too large.";
-        //     $uploadOk = 0;
-        // }
-
-        // Allow certain file formats
         if (
             $imageFileType != "jpg" && $imageFileType != "png" && $imageFileType != "jpeg"
             && $imageFileType != "gif"
@@ -38,10 +29,8 @@ try {
             $uploadOk = 0;
         }
 
-        // Check if $uploadOk is set to 0 by an error
         if ($uploadOk == 0) {
             echo "Sorry, your file was not uploaded.";
-            // if everything is ok, try to upload file
         } else {
             if (move_uploaded_file($_FILES["image"]["tmp_name"], $target_file)) {
                 echo "The file " . htmlspecialchars(basename($_FILES["image"]["name"])) . " has been uploaded.";
@@ -64,12 +53,6 @@ try {
                 echo $sql;
             }
     }
-    // echo $sql;
-    // $sql = "insert into games (name,desc,image,mode,players,restriction,duration)
-    // values(".$_POST['name'].",".$_POST['desc'].",".$_POST['image'].",".$_POST['mode'].","
-    // .$_POST['players'].",".$_POST['restriction'].",".$_POST['duration'].") ON DUPLICATE KEY UPDATE    
-    // name=".$_POST['name'].", desc=".$_POST['desc'].", image=".$_POST['image'].", mode=".$_POST['mode'].
-    // ", players=".$_POST['players'].", restriction=".$_POST['restriction'].", duration=".$_POST['duration'].";";
     $result = $conn->query($sql);
 
     header("Location: http://localhost:3000/admin.php");

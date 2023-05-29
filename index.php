@@ -154,7 +154,7 @@
                   500₽<span class="text-base text-body-color font-medium">/ 30 мин</span></h2>
               </li>
             </ul>
-            <a href="https://vk.com/im?media=&sel=-168104593" class="mt-10 w-full transform rounded-md bg-blue-600 px-4 py-2 text-white hover:bg-blue-500">
+            <a target="_blank" href="https://vk.com/im?media=&sel=-168104593" class="mt-10 w-full transform rounded-md bg-blue-600 px-4 py-2 text-white hover:bg-blue-500">
               Арендовать</a>
           </div>
           <div
@@ -182,7 +182,7 @@
                     class="text-base text-body-color font-medium">/ 30 мин</span></h2>
               </li>
             </ul>
-            <a href="https://vk.com/im?media=&sel=-168104593" class="mt-10 w-full transform rounded-md bg-blue-600 px-4 py-2 text-white hover:bg-blue-500">
+            <a target="_blank" href="https://vk.com/im?media=&sel=-168104593" class="mt-10 w-full transform rounded-md bg-blue-600 px-4 py-2 text-white hover:bg-blue-500">
               Арендовать</a>
           </div>
           <div
@@ -210,7 +210,7 @@
                   600₽<span class="text-base text-body-color font-medium">/ 30 мин</span></h2>
               </li>
             </ul>
-            <a href="https://vk.com/im?media=&sel=-168104593" class="mt-10 w-full transform rounded-md bg-blue-600 px-4 py-2 text-white hover:bg-blue-500">
+            <a target="_blank" href="https://vk.com/im?media=&sel=-168104593" class="mt-10 w-full transform rounded-md bg-blue-600 px-4 py-2 text-white hover:bg-blue-500">
               Арендовать</a>
           </div>
         </div>
@@ -231,8 +231,8 @@
       </div>
       <div class="flex flex-col w-full mt-6 px-4 md:px-48 mb-6">
         <div class="flex flex-row justify-left relative mb-4">
-          <div class="text-xl">Что вы представляете?</div>
-          <button id="question1" class="absolute top-0 right-0 w-8 h-8 duration-300" onclick="openAnswer(1)">
+          <div class="flex flex-1 text-xl">Что вы представляете?</div>
+          <button id="question1" class="w-8 h-8 duration-300" onclick="openAnswer(1)">
             <img class="w-full h-full" src="./icons/chevron-down-svgrepo-com.png" alt="">
           </button>
         </div>
@@ -243,8 +243,8 @@
       </div>
       <div class="flex flex-col w-full mt-6 px-4 md:px-48 mb-6">
         <div class="flex flex-row justify-left relative mb-4">
-          <div class="text-xl">Какие условия работы?</div>
-          <button id="question2" class="absolute top-0 right-0 w-8 h-8 duration-300" onclick="openAnswer(2)">
+          <div class="flex flex-1 text-xl">Какие условия работы?</div>
+          <button id="question2" class="w-8 h-8 duration-300" onclick="openAnswer(2)">
             <img class="w-full h-full" src="./icons/chevron-down-svgrepo-com.png" alt="">
           </button>
         </div>
@@ -254,8 +254,8 @@
       </div>
       <div class="flex flex-col w-full mt-6 px-4 md:px-48 mb-6">
         <div class="flex flex-row justify-left relative mb-4">
-          <div class="text-xl">Какое должно быть помещения?</div>
-          <button id="question3" class="absolute top-0 right-0 w-8 h-8 duration-300" onclick="openAnswer(3)">
+          <div class="flex flex-1 text-xl">Какое должно быть помещения?</div>
+          <button id="question3" class="w-8 h-8 duration-300" onclick="openAnswer(3)">
             <img class="w-full h-full" src="./icons/chevron-down-svgrepo-com.png" alt="">
           </button>
         </div>
@@ -267,8 +267,8 @@
       </div>
       <div class="flex flex-col w-full mt-6 px-4 md:px-48 mb-6">
         <div class="flex flex-row justify-left relative mb-4">
-          <div class="text-xl">Какое должно быть необходимое оборудование?</div>
-          <button id="question4" class="absolute top-0 right-0 w-8 h-8 duration-300" onclick="openAnswer(4)">
+          <div class="flex flex-1 text-xl">Какое должно быть необходимое оборудование?</div>
+          <button id="question4" class="w-8 h-8 duration-300" onclick="openAnswer(4)">
             <img class="w-full h-full" src="./icons/chevron-down-svgrepo-com.png" alt="">
           </button>
         </div>
@@ -280,8 +280,8 @@
       </div>
       <div class="flex flex-col w-full mt-6 px-4 md:px-48 mb-6">
         <div class="flex flex-row justify-left relative mb-4">
-          <div class="text-xl">Вредны ли очки виртуальной реальности для здоровья?</div>
-          <button id="question5" class="absolute top-0 right-0 w-8 h-8 duration-300" onclick="openAnswer(5)">
+          <div class="flex flex-1 text-xl">Вредны ли очки виртуальной реальности для здоровья?</div>
+          <button id="question5" class="w-8 h-8 duration-300" onclick="openAnswer(5)">
             <img class="w-full h-full" src="./icons/chevron-down-svgrepo-com.png" alt="">
           </button>
         </div>
@@ -292,8 +292,8 @@
       </div>
       <div class="flex flex-col w-full mt-6 px-4 md:px-48 mb-6">
         <div class="flex flex-row justify-left relative mb-4">
-          <div class="text-xl"> Как снизить негативное воздействие VR-устройств на здоровье?</div>
-          <button id="question6" class="absolute top-0 right-0 w-8 h-8 duration-300" onclick="openAnswer(6)">
+          <div class="flex flex-1 text-xl"> Как снизить негативное воздействие VR-устройств на здоровье?</div>
+          <button id="question6" class="w-8 h-8 duration-300" onclick="openAnswer(6)">
             <img class="w-full h-full" src="./icons/chevron-down-svgrepo-com.png" alt="">
           </button>
         </div>

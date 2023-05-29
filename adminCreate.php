@@ -40,8 +40,8 @@ if (isset($_GET["gameId"])) {
 </head>
 
 <body class="container mx-auto min-h-screen bg-slate-900">
-  <h1 class="w-full text-center text-3xl text-gray-200 font-bolt mt-6">Добавление игр</h1>
-  <form method="post" action="some.php<?php if (isset($row)) echo "?gameId=".$row["id"]; ?>" enctype="multipart/form-data">
+  <h1 class="w-full text-center text-3xl text-gray-200 font-bolt mt-6" ><?php if (isset($_GET["gameId"])) {echo "Редактировать игру";} else {echo "Добавить игру";}?></h1>
+  <form method="post" action="edit.php<?php if (isset($row)) echo "?gameId=".$row["id"]; ?>" enctype="multipart/form-data">
     <div class="my-2">
       <span class="block mb-2 text-xl text-gray-200">Название</span>
       <input required name="name" value="<?php if (isset($row))
@@ -86,7 +86,7 @@ if (isset($_GET["gameId"])) {
       <div class="my-2">
         <span class="block mb-2 text-xl text-gray-200">Картинка</span>
         <img src="<?php if (isset($row))
-        echo './img/games/' . $row["image"] ?>" alt="" class="h-[100px] w-[100px] object-cover" />
+        echo '/img/games/' . $row["image"] ?>" alt="" class="h-[100px] w-[100px] object-cover" />
       </div>
       <div class="my-2">
         <input <?php if (!isset($row["image"]))
@@ -94,12 +94,9 @@ if (isset($_GET["gameId"])) {
         class="w-full mt-2 text-white h-8" placeholder="Картинка" />
     </div>
     <div class="w-full flex justify-end">
-      <button type="submit" name="submit" class="text-xl bg-blue-600 rounded-lg py-2 px-4 text-white">Сохранить</button>
+      <button type="submit" name="submit" class="text-xl bg-blue-600 rounded-lg py-2 mb-6 px-4 text-white">Сохранить</button>
     </div>
   </form>
-  <?php
-  
-  ?>
 </body>
 
 </html>

@@ -45,7 +45,7 @@ if (!isset($_SESSION['admin'])) {
                         echo
                           '
                           <div class=" py-2 text-center truncate">',$row["id"],'</div>
-                          <div class=" flex justify-center"><img src="./img/games/', $row["image"], '" alt="" class="h-[50px] w-[50px] object-cover" /></div>
+                          <div class=" flex justify-center"><img src="/img/games/', $row["image"], '" alt="" class="h-[50px] w-[50px] object-cover" /></div>
                           <div class=" py-2 col-span-2 text-center truncate">', $row["name"],'</div>
                           <div class=" py-2 col-span-4 hidden md:block text-center truncate">',$row["desc"],'</div>
                           <div class=" flex flex-col items-end pr-6 py-2 col-span-2 text-center truncate"><a class="text-blue-500 mb-2" href="adminCreate.php?gameId=', $row["id"], '">Изменить</a><a class="text-red-600" href="gamedelete.php?gameId=', $row["id"], '">Удалить</a></div>
